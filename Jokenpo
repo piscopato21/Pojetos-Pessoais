@@ -1,0 +1,22 @@
+from time import sleep
+from random import choice
+
+print('=============VAMOS JOGAR JOKENPO?=============')
+
+p = ['pedra', 'papel', 'tesoura']
+r = choice(p)
+ppt = input('Você escolhe pedra, papel ou tesoura? ')
+
+print(f'Você escolheu: {ppt}. \nEu escolhi: \nPENSANDO...')
+sleep(2)
+print(f'====={r}=====')
+
+if ppt == p:
+    print('Deu empate. Tente novamente.')
+elif (ppt == 'pedra' and r == 'tesoura') or \
+     (ppt == 'tesoura' and r == 'papel') or \
+     (ppt == 'papel' and r == 'pedra'):
+     print('==========VOCÊ VENCEU==========')
+else:
+    print('==========VOCÊ PERDEU==========')
+print('FIM DE JOGO')
