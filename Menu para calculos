@@ -36,3 +36,5 @@ while n1 != 5:
         print('=========================')
     if n1 == 5:
         print('Adeus.')
+    else:
+        print("ERRO! TENTE NOVAMENTE.")
